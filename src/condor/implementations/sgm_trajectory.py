@@ -168,7 +168,7 @@ class TrajectoryAnalysis:
                 expression_to_operator(
                     [self.p],
                     # TODO in future allow t0 to occur at arbitrary times
-                    [0.0, 0.0, inf],
+                    [model.t0.backend_repr, model.t0.backend_repr, inf],
                     f"{ode_model.__name__}_at_times_t0",
                 )
             )
